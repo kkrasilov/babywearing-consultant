@@ -20,8 +20,10 @@
   <link rel="stylesheet" href="css/reviews.css">
   <link rel="stylesheet" href="css/contacts.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="javascript/parallax.js-1.5.0/parallax.js"></script>
+  <script src="javascript/carousel.js"></script>
 
   <script src="https://kit.fontawesome.com/028b7f700e.js" crossorigin="anonymous"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=b4be7e4a-99bb-4c32-bd65-24a2cee2d609&lang=ru_RU"
@@ -130,26 +132,77 @@
     <div class="prev">
       <i class="fas fa-angle-double-left"></i>
     </div>
-    <div class="review carousel-item-one">
-      <div class="reviews-photo">
-        <img src="image/reviews_avatar2.jpg" alt="reviews photo"/>
+    <div class="slider-inner">
+      <div class="slider active">
+        <div class="review carousel-item-one">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar2.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-full">★★★★★</span>
+          <h3 class="title-small">Баева Алина</h3>
+          <div class="text-reviews text-left">
+            «Спасибо Юлии, что открыла для меня чудесный мир слингоношения! Мои руки свободны, а
+            ребёнок спокоен. Я думала, что мотать слинг сложно, но на деле все получилось в два счета!»
+          </div>
+        </div>
+        <div class="review carousel-item-two">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar1.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-4-5">★★★★★</span>
+          <h3 class="title-small">Злобина Екатерина</h3>
+          <div class="text-reviews text-left">
+            «На консультации все было понятно и получилось, но потом сама намотать не смогла.
+            Связались с Юлией после консультации онлайн и доработали непонятное!»
+          </div>
+        </div>
       </div>
-      <span class="icon-star-full">★★★★★</span>
-      <h3 class="title-small">Баева Алина</h3>
-      <div class="text-reviews text-left">
-        «Спасибо Юлии, что открыла для меня чудесный мир слингоношения! Мои руки свободны, а
-        ребёнок спокоен. Я думала, что мотать слинг сложно, но на деле все получилось в два счета!»
+      <div class="slider">
+        <div class="review carousel-item-one">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar3.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-full">★★★★★</span>
+          <h3 class="title-small">Красилов Константин</h3>
+          <div class="text-reviews text-left">
+            «Слинг стал незаменимым помощником с нашим 8-месячным сыном, пока жена была на работе. Раз - и он спит!»
+          </div>
+        </div>
+        <div class="review carousel-item-two">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar4.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-full">★★★★★</span>
+          <h3 class="title-small">Патрушев Михаил</h3>
+          <div class="text-reviews text-left">
+            «Спасибо за консультацию! Мне казалось, что освоить слинг-шарф будет сложно, но с Юлией стало легко и
+            понятно, а главное - безопасно для ребёнка! Спасибо так же за помощь в выборе подходящего слинга!»
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="review carousel-item-two">
-      <div class="reviews-photo">
-        <img src="image/reviews_avatar1.jpg" alt="reviews photo"/>
-      </div>
-      <span class="icon-star-4-5">★★★★★</span>
-      <h3 class="title-small">Злобина Екатерина</h3>
-      <div class="text-reviews text-left">
-        «На консультации все было понятно и получилось, но потом сама намотать не смогла.
-        Связались с Юлией после консультации онлайн и доработали непонятное!»
+      <div class="slider">
+        <div class="review carousel-item-one">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar5.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-full">★★★★★</span>
+          <h3 class="title-small">Шамова Ксения</h3>
+          <div class="text-reviews text-left">
+            «Спасибо огромное! Все доступно и подробно объяснила! Мы проверили на
+            практике - выгуляли! Наконец-то открыли для себя новый способ прогулок без слез и истерик!»
+          </div>
+        </div>
+        <div class="review carousel-item-two">
+          <div class="reviews-photo">
+            <img src="image/reviews_avatar6.jpg" alt="reviews photo"/>
+          </div>
+          <span class="icon-star-full">★★★★★</span>
+          <h3 class="title-small">Устинова Наталья</h3>
+          <div class="text-reviews text-left">
+            «Попробовали май-слинг. Оказывается, это так просто! Пока не попробуешь это, ни за что не поймёшь) спина
+            сказала «спасибо!»»
+          </div>
+        </div>
       </div>
     </div>
     <div class="next text-center">
@@ -157,14 +210,14 @@
     </div>
   </div>
   <div class="carousel-indicator-container">
-    <a class="carousel-indicator" href=""></a>
-    <a class="carousel-indicator carousel-indicator-active" href=""></a>
-    <a class="carousel-indicator" href=""></a>
+    <span class="carousel-indicator active"></span>
+    <span class="carousel-indicator"></span>
+    <span class="carousel-indicator"></span>
   </div>
 </div>
 
-<div class="container contacts" id="contacts">
-  <h2 class="title-medium line-bottom-text">Контакты</h2>
+<div class="container contacts text-center" id="contacts">
+  <h2 class="title-medium line-bottom-text ">Контакты</h2>
   <div class="contacts-content">
     <div class="contact-information">
       <h3 class="title-small text-center indents">Мои контакты</h3>
@@ -188,7 +241,7 @@
     </div>
     <div class="feedback-form">
       <h3 class="title-small text-center indents">Обратная связь</h3>
-      <form action="" method="post">
+      <form>
         <input type="text" placeholder="Имя">
         <input type="text" placeholder="Эл.почта">
         <input type="text" placeholder="Телефон">

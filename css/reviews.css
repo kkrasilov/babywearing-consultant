@@ -9,6 +9,7 @@
 }
 
 .reviews-photo img {
+  border: 1px solid #bdbdbd  ;
   border-radius: 100%;
   width: 180px;
 }
