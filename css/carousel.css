@@ -47,7 +47,6 @@
 .fa-angle-double-left,
 .fa-angle-double-right {
   font-size: 36px;
-
 }
 
 .fa-angle-double-left {
@@ -69,7 +68,6 @@
   margin: 30px;
 }
 
-
 .carousel-indicator-container {
   width: 100%;
   margin: auto;
@@ -88,8 +86,6 @@
   background-color: white;
 }
 
-
-
 .carousel-indicator.active {
   background-color: gray;
 }
@@ -101,6 +97,7 @@
       "carousel-item-one"
       "carousel-item-two";
   }
+
   .carousel-inner {
     grid-template-columns: 10% 80% 10%;
   }

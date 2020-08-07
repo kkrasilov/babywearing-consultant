@@ -1,9 +1,10 @@
-window.onload = function () {
-  document.getElementById("feedback-form-button").addEventListener("click", function (event) {
-    document.getElementById("feedback-form").reset();
+$(document).ready(function () {
+  $('.feedback-form-button').on('click', function(event) {
+    $('#feedback-form')[0].reset();
     event.preventDefault();
   });
+
   $('.button').on('click', function (event) {
     event.preventDefault();
   });
-};
+});

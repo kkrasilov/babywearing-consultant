@@ -8,7 +8,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
-
 }
 
 .service-container {
@@ -25,6 +24,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
   }
+
  .service-container:last-child {
    grid-column: 1/3;
  }
@@ -35,6 +35,7 @@
     grid-template-columns: 1fr;
     row-gap: 50px;
   }
+
   .service-container:last-child {
     grid-column: 1;
   }
