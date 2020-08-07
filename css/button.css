@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px;
+  color: white;
+  width: 160px;
+}
+
+.button-green {
+  background: #4CAF50;
+}
+
+.button-green:hover {
+  background: #45a049;
+}
+
+.button-blue {
+  background: #1565c0;
+}
+
+.button-blue:hover {
+  background: #0d47a1;
+}

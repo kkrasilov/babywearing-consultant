@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  color: #616161;
+}
+
+.indents {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.large-indents {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.box-shadow {
+  padding: 20px;
+  border-radius: .3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  min-height: 100px;
+  background-color: #B0DACC;
+  margin: 0;
+  line-height: 100px;
+  font-size: 18px;
+  color: #65878F;
+}

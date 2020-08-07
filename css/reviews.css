@@ -1,0 +1,14 @@
+.reviews {
+  min-height: 500px;
+}
+
+.review {
+  padding-top: 10px;
+  border-radius: .3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-photo img {
+  border-radius: 100%;
+  width: 180px;
+}

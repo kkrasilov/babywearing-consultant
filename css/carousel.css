@@ -1,0 +1,96 @@
+.carousel-inner {
+  margin: auto;
+  padding: 20px 50px 20px 50px;
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: auto;
+  grid-template-areas: "prev carousel-item-one carousel-item-two next";
+}
+
+.next,
+.prev {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  cursor: pointer;
+}
+
+.prev {
+  background: linear-gradient(to left, white, #eeeeee);
+  grid-area: prev;
+}
+
+.prev:hover {
+  background: linear-gradient(to left, white, #bdbdbd);
+}
+
+.next {
+  background: linear-gradient(to right, white, #eeeeee);
+  grid-area: next;
+}
+
+.next:hover {
+  background: linear-gradient(to right, white, #bdbdbd);
+}
+
+.fa-angle-double-left,
+.fa-angle-double-right {
+  font-size: 36px;
+  color: gray;
+}
+
+.fa-angle-double-left {
+  padding-left: 15px;
+}
+
+.carousel-item-one {
+  grid-area: carousel-item-one;
+  margin: 30px;
+}
+
+.carousel-item-two {
+  grid-area: carousel-item-two;
+  margin: 30px;
+}
+
+.carousel-indicator-container {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-indicator {
+  display: inline-block;
+  border-radius: 100%;
+  color: white;
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.carousel-indicator-active {
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas:
+    "prev carousel-item-one next"
+    "prev carousel-item-two next"
+  }
+}
+
+@media (max-width: 520px) {
+  .fa-angle-double-left {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .carousel-inner {
+    padding: 0;
+  }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Красилова Юлия</title>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/carousel.css">
+
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/main-information.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/contacts.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="javascript/parallax.js-1.5.0/parallax.js"></script>
+
+  <script src="https://kit.fontawesome.com/028b7f700e.js" crossorigin="anonymous"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b4be7e4a-99bb-4c32-bd65-24a2cee2d609&lang=ru_RU"
+          type="text/javascript">
+  </script>
+  <script src="javascript/map.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header">
+  <div class="navbar">
+    <div class="navbar-brand text-center">
+      <span class="text-brand">Красилова Юлия</span>
+      <span class="text-brand-en">babywearing consultant</span>
+    </div>
+    <div class="navbar-content">
+      <div class="navbar-item">
+        <a class="navbar-link" href="#about-me">Обо мне</a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-link" href="#service">Услуги</a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-link" href="#reviews">Отзывы</a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-link" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="intro parallax-window" data-parallax="scroll" data-image-src="image/intro_image.png">
+  <div class="intro-content text-center">
+    <h1 class="title">Красилова Юлия<br>babywearing consultant</h1>
+    <h2 class="text-slogan">«С заботой о детях!‎»</h2>
+    <a class="button button-green" href="#">Записаться</a>
+  </div>
+</div>
+
+<div class="container main-information" id="about-me">
+  <div class="avatar">
+    <img src="image/avatar.jpg" alt="juliet"/>
+  </div>
+  <div class="box-shadow about-me text-center">
+    <h2 class="title-medium line-bottom-text">Обо мне</h2>
+    <ul class="list-skills">
+      <li>Имею диплом педиатра (УГМУ)</li>
+      <li>Практикующий врач</li>
+      <li>Слингоконсультант с 2020 года</li>
+      <li>
+        Диплом
+        <a class="text-link" href="https://progv.ru/" rel="noopener noreferrer" target="_blank">ProGV</a>
+      </li>
+      <li>Мама двух сыновей</li>
+    </ul>
+  </div>
+</div>
+
+<div class="container service text-center" id="service">
+  <h2 class="title-medium line-bottom-text">Услуги</h2>
+  <div class="service-content">
+    <div class="service-container box-shadow">
+      <h2 class="title-small">Помощь с выбором переноски</h2>
+      <div class="large-indents">
+        Индивидульный подход к выбору личной переноски
+      </div>
+      <div class="service-container-footer">
+        <div class="title-medium text-price indents">
+          1000&nbsp;₽
+        </div>
+        <a class="button button-blue indents" href="#">Записаться</a>
+      </div>
+    </div>
+    <div class="service-container box-shadow">
+      <h2 class="title-small">Онлай-видеоконсультация</h2>
+      <div class="large-indents">
+        1 час 30 мин<br>
+        1 намотка в одном виде переноски в формате видеоконсультации
+      </div>
+      <div class="service-container-footer">
+        <div class="title-medium text-price indents">
+          1500&nbsp;₽
+        </div>
+        <a class="button button-blue indents" href="#">Записаться</a>
+      </div>
+    </div>
+    <div class="service-container box-shadow">
+      <h2 class="title-small">Очная консультация</h2>
+      <div class="large-indents">
+        1 час 30 мин<br>
+        1 намотка в одном виде переноски
+      </div>
+      <div class="service-container-footer">
+        <div class="title-medium text-price indents">
+          2000&nbsp;₽
+        </div>
+        <a class="button button-blue indents" href="#">Записаться</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container reviews text-center" id="reviews">
+  <h2 class="title-medium line-bottom-text">Отзывы</h2>
+  <div class="carousel-inner">
+    <div class="prev">
+      <i class="fas fa-angle-double-left"></i>
+    </div>
+    <div class="review carousel-item-one">
+      <div class="reviews-photo">
+        <img src="image/reviews_avatar2.jpg" alt="reviews photo"/>
+      </div>
+      <span class="icon-star-full">★★★★★</span>
+      <h3 class="title-small">Баева Алина</h3>
+      <div class="text-reviews text-left">
+        «Спасибо Юлии, что открыла для меня чудесный мир слингоношения! Мои руки свободны, а
+        ребёнок спокоен. Я думала, что мотать слинг сложно, но на деле все получилось в два счета!»
+      </div>
+    </div>
+    <div class="review carousel-item-two">
+      <div class="reviews-photo">
+        <img src="image/reviews_avatar1.jpg" alt="reviews photo"/>
+      </div>
+      <span class="icon-star-4-5">★★★★★</span>
+      <h3 class="title-small">Злобина Екатерина</h3>
+      <div class="text-reviews text-left">
+        «На консультации все было понятно и получилось, но потом сама намотать не смогла.
+        Связались с Юлией после консультации онлайн и доработали непонятное!»
+      </div>
+    </div>
+    <div class="next text-center">
+      <i class="fas fa-angle-double-right"></i>
+    </div>
+  </div>
+  <div class="carousel-indicator-container">
+    <a class="carousel-indicator" href=""></a>
+    <a class="carousel-indicator carousel-indicator-active" href=""></a>
+    <a class="carousel-indicator" href=""></a>
+  </div>
+</div>
+
+<div class="container contacts" id="contacts">
+  <h2 class="title-medium line-bottom-text">Контакты</h2>
+  <div class="contacts-content">
+    <div class="contact-information">
+      <h3 class="title-small text-center indents">Мои контакты</h3>
+      <ul class="list-contacts text-left">
+        <li>Phone: <a class="text-link" href="tel:+79292248958">+7 929 224 89 58</a></li>
+        <li>Email: <a class="text-link" href="mailto:julie1313@mail.ru ">julie1313@mail.ru </a></li>
+        <li>Адрес: <span class="text-small-gray">Россия, г. Нижний Тагил, ул. Газетная, 77</span></li>
+        <li>
+          <a href="https://vk.com/juliet_lx352xz" rel="noopener noreferrer" target="_blank">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/juliet_lx352xz_x3/?hl=ru" rel="noopener noreferrer"
+             target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/juliet.krasilova" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="feedback-form">
+      <h3 class="title-small text-center indents">Обратная связь</h3>
+      <form action="" method="post">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Эл.почта">
+        <input type="text" placeholder="Телефон">
+        <textarea placeholder="Добавьте сообщение"></textarea>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+    <div id="map" data-address="Нижний Тагил, Газетная 77"></div>
+  </div>
+</div>
+<div class="footer text-center">
+  Красилова Юлия babywearing consultant ©2020
+</div>
+</body>
+</html>
