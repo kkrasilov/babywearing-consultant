@@ -1,1 +1,1 @@
-# Лендинг слингоконсультанта.
+# Landing babywearing-consultant.
